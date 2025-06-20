@@ -1,28 +1,41 @@
-h1{
+h1 {
     color: red;
 }
 
-#tit_1{
+#tit_1 {
     font-size: 40px;
 }
 
-.noticias{
+.noticias {
     font-family: arial;
 }
-ol{
+ol {
     color: purple;
 }
-table{
+table {
     width: 100%;
 }
-table caption{
+table caption {
     font-weight: bolder;
     font-size: 20px;
 }
-th{
+th {
     background-color: gray;
     color: white;
 }
-td{
+td {
     background-color: azure;
+}
+#conteudo {
+    width: 70%;
+    background-color: antiquewhite;
+    float: left;
+}
+#menu_contexto {
+    width: 30%;
+    background-color: aquamarine;
+    float: left;
+}
+#rodape {
+    clear: both;
 }
