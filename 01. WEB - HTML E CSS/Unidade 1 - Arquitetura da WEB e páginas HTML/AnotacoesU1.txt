@@ -1,0 +1,80 @@
+# Unidade 1 - 1. Histórico e evolução da Web
+
+##### Protocolo de comunicação -> Forma de se comunicar
+- E-mail: SMTP;
+- Transferência de arquivos: FTP;
+- Aplicações de telefonia via IP: VOIP;
+- WEB: HTTP;
+
+
+##### O URL (Uniform Resource Locator) é um padrão de URI que serve para referenciar um recurso e sua localização, normalmente na Internet. O URL é composto pelas seguintes partes:
+
+- Esquema – identifica a forma de interação entre um cliente e um servidor, como por exemplo, http, https, ftp, entre outros;
+- User:pass – informações de usuário;
+- Host – nome ou número IP onde se encontra a aplicação servidor;
+- Porta – identifica a porta TCP/IP associada ao servidor. A porta padrão do HTTP (80) pode ser omitida;
+- Caminho – indica o local exato onde o recurso se encontra;
+- Query – dados não hierárquicos, detalhando a consulta normalmente sob a forma de pares nome e valor;
+- Fragmento – identifica uma seção no recurso.
+
+
+##### REQUISIÇÃO HTTP
+
+Linha da requisição - informa o método da requisição, o recurso e a versão do protocolo HTTP.
+Linhas de Cabeçalhos – inclui informações complementares sobre a requisição no formato campo e valor, sendo um para cada linha.
+Corpo da entidade – carrega dados adicionais passados pelo cliente, tais como: dados de formulários, arquivos completos em um processo de upload, entre outros.
+
+*Método*	*Propósito*
+GET	    Requisitar a representação de um recurso específico.
+POST	Enviar dados a serem processados por um recurso. Usado para incluir recursos ou submeter dados de processamento.
+HEAD	Similar ao GET, porém o retorno deve ser somente do conjunto de cabeçalhos associados ao recurso solicitado.
+PUT	    Requisitar a criação ou atualização de um recurso no servidor a partir dos dados no corpo da requisição.
+DELETE	Excluir um recurso do servidor.
+TRACE	Solicita ao servidor uma cópia (eco) da requisição. Usado para testar se a requisição foi alterada no caminho.
+PATCH	Utilizado para realizar alterações parciais de um recurso.
+OPTIONS	Usado pelo cliente para entender, ou descobrir, os métodos HTTP e outras opções suportadas por um servidor web.
+CONNECT	Usado quando o cliente estabelece uma conexão HTTPS com um servidor via um proxy.
+
+##### RESPOSTA HTTP
+A imagem a seguir mostra o formato padrão de uma resposta HTTP e podemos observar que, também, é dividida em três partes:
+
+Linha da resposta - informa a versão do HTTP praticada pelo servidor, o código de retorno (status) e uma mensagem explicativa para o código de retorno.
+Linhas de Cabeçalhos – tal qual na requisição, inclui informações complementares sobre a resposta no formato campo e valor, sendo um para cada linha.
+Corpo da entidade – traz o recurso solicitado pelo cliente ou dados de resposta à requisição feita.
+ 
+
+##### CABEÇALHOS HTTP (HEADERS)
+Os cabeçalhos incluídos tanto nas requisições quanto nas respostas permitem ao cliente e ao servidor passar informações adicionais de um lado para o outro. Esses cabeçalhos podem ser classificados como:
+
+Request header: informações sobre a requisição feita ou sobre o cliente Web.
+Response header: informações sobre a resposta encaminhada ou sobre o servidor Web.
+Entity header: informações sobre o conteúdo da entidade trocada como tamanho e tipo.
+General header: Usado tanto em requisições quanto em respostas.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+HTML E CSS
+
+EXEMPLO
+
+<h1 id="tit_1" class="noticias">
+    Minha primeira página HTML
+</h1>
+
+A associação pode ser feita via 3 elementos:
+
+Nome do elemento: h1
+ID do elemento: "tit_1"
+Class do elemento: "noticias"
+
+h1{
+    color: blue;
+}
+
+#tit_1{
+    font-size: 20px;
+}
+
+.noticias{
+    font-family: arial;
+}
